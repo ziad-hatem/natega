@@ -73,9 +73,13 @@ const GetNatega = () => {
           {isLoading ? "جاري البحث" : "ابحث"}
         </button>
       </form>
-
       <div className="w-[95%] max-w-fit mt-8">
         {natega && <InfoTable natega={natega} />}
+      </div>
+      <div>
+        {natega && natega[0]?.student_case_desc == "ناجح دور أول" && (
+          <video className="chroma-video" autoPlay src="/celebrate.mp4" />
+        )}
       </div>
     </div>
   );
