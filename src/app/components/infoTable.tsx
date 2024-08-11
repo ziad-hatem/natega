@@ -20,7 +20,8 @@ const InfoTable = ({ natega }: { natega: any }) => {
         </thead>
         <tbody>
           <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
-            <td
+            <th
+              scope="row"
               className={`px-6 py-4 ${
                 natega.student_case_desc === "ناجح دور أول"
                   ? "text-green-500"
@@ -28,10 +29,10 @@ const InfoTable = ({ natega }: { natega: any }) => {
               }`}
             >
               {natega.student_case_desc}
-            </td>
-            <td className="px-6 py-4">
+            </th>
+            <th scope="row" className="px-6 py-4">
               %{((natega.total_degree / 410) * 100).toFixed(2)}
-            </td>
+            </th>
             <th
               scope="row"
               className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"

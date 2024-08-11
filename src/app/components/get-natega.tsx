@@ -49,7 +49,7 @@ const GetNatega = () => {
         <button
           type="submit"
           disabled={isLoading}
-          className="text-white bg-blue-7000 w-1/3 justify-center hover:bg-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 inline-flex items-center"
+          className="text-white bg-blue-7000 w-full max-w-fit justify-center hover:bg-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 inline-flex items-center"
         >
           {!isLoading ? null : (
             <svg
@@ -74,7 +74,7 @@ const GetNatega = () => {
         </button>
       </form>
 
-      <div className="w-[80%] max-w-[500px] mt-8">
+      <div className="w-[95%] max-w-[500px] mt-8">
         {natega && <InfoTable natega={natega[0]} />}
       </div>
     </div>
