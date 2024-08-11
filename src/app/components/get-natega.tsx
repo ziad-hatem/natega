@@ -75,7 +75,7 @@ const GetNatega = () => {
       </form>
 
       <div className="w-[95%] max-w-fit mt-8">
-        {natega && <InfoTable natega={natega[0]} />}
+        {natega && <InfoTable natega={natega} />}
       </div>
     </div>
   );
