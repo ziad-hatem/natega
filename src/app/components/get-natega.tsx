@@ -6,7 +6,7 @@ import axios from "axios";
 const GetNatega = () => {
   const [natega, setNatega] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = (e: any) => {
     e.preventDefault();
     const seatingNo = e.target[0].value;
     if (seatingNo.length !== 6) {
