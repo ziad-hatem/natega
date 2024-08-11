@@ -4,7 +4,7 @@ import InfoTable from "./infoTable";
 import axios from "axios";
 
 const GetNatega = () => {
-  const [natega, setNatega] = useState(null);
+  const [natega, setNatega] = useState<any>(null);
   const [isLoading, setIsLoading] = useState(false);
   const handleSubmit = (e: any) => {
     e.preventDefault();
