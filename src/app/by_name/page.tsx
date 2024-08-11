@@ -39,7 +39,7 @@ const Page = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen">
+    <div className="flex flex-col mt-10 items-center justify-center min-h-screen">
       <ul className="mb-4 text-right w-[80%] max-w-[500px]">
         <li className="text-bold text-xl">:تعليمات البحث بالاسم</li>
         <li className="text-gray-500 mr-1">
@@ -60,6 +60,7 @@ const Page = () => {
         <input
           type="text"
           placeholder="الاسم"
+          minLength={3}
           className="w-full p-2 rounded-md text-center border-2 outline-none border-gray-300"
         />
         {error != "لا يوجد نتايج" && (
