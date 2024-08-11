@@ -22,8 +22,11 @@ const InfoTable = ({ natega }: { natega: any }) => {
           </tr>
         </thead>
         <tbody>
-          {natega.map((natega: any) => (
-            <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+          {natega.map((natega: any, index: number) => (
+            <tr
+              className="bg-white border-b dark:bg-gray-800 dark:border-gray-700"
+              key={index}
+            >
               <th
                 scope="row"
                 className={`px-6 py-4 ${
