@@ -17,7 +17,7 @@ const GetNatega = () => {
       setIsLoading(true);
       setNatega(null);
       try {
-        const response = await axios.post(`/api/natega`, {
+        const response = await axios.post(`/api/nategabyseatingNo`, {
           seating_no: Number(seatingNo),
         });
         setNatega(response.data);
@@ -74,7 +74,7 @@ const GetNatega = () => {
         </button>
       </form>
 
-      <div className="w-[95%] max-w-[500px] mt-8">
+      <div className="w-[95%] max-w-fit mt-8">
         {natega && <InfoTable natega={natega[0]} />}
       </div>
     </div>
