@@ -30,7 +30,7 @@ const GetNatega = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center h-screen">
+    <div className="flex flex-col items-center justify-center min-h-screen">
       <form
         onSubmit={(e) => handleSubmit(e)}
         className="flex flex-col items-center justify-center gap-4 w-[80%] max-w-[500px]"

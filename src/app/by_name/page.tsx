@@ -39,7 +39,7 @@ const Page = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center h-screen">
+    <div className="flex flex-col items-center justify-center min-h-screen">
       <ul className="mb-4 text-right w-[80%] max-w-[500px]">
         <li className="text-bold text-xl">:تعليمات البحث بالاسم</li>
         <li className="text-gray-500 mr-1">
